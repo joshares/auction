@@ -6,7 +6,7 @@ import romanGirl from "../../public/roman-girl.jpg";
 export default function Hero() {
   return (
     <main className="pt-5 w-full ">
-      <header className="flex flex-col md:flex-row md:justify-between  md:items-end justify-center items-center gap-4 px-5 md:px-16">
+      <header className="flex relative z-10 flex-col md:flex-row md:justify-between  md:items-end justify-center items-center gap-4 px-5 md:px-16">
         <p className="text-3xl text-center md:text-left md:text-6xl md:w-3/5 w-full">
           Ancient Roman marble bust - 20th Century
         </p>
@@ -15,7 +15,7 @@ export default function Hero() {
           <p>CLOSING IN 2H: 24M:35s</p>
         </div>
       </header>
-      <div className="relative w-full">
+      <div className="relative w-full md:h-[32rem]">
         <section className="absolute top-10 left-[20%] z-20 w-1/4 md:flex flex-col gap-[8rem] hidden">
           <article>
             <p>
@@ -79,12 +79,12 @@ export default function Hero() {
           </article>
         </section>
         <section className="md:absolute right-0 top-0 md:w-3/5">
-          <div>
+          <div className="overflow-hidden">
             <Image
               src={romanGirl}
               width={500}
               alt="image"
-              className="w-full h-[25rem]  md:h-[33rem] object-cover"
+              className="w-full h-[25rem]  md:h-[33rem] object-cover transition-transform transform-gpu duration-300 ease-in-out hover:scale-110"
             />
           </div>
           <footer className="md:absolute bg-purple-100 w-full flex justify-between items-center p-6 md:w-3/5  shadow-md  top-[100%] z-40">
