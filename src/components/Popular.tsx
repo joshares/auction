@@ -1,5 +1,5 @@
 "use client";
-import { popularData as data } from "@/utils/data";
+import { popularData as data } from "@/constants/data";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import PopularItem from "./PopularItem";
 
