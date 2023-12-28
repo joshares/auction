@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <main className="px-5 md:px-16 py-5 flex flex-col md:flex-row gap-4 md:items-start items-center justify-between">
+    <main className="px-5 md:px-16 py-5 flex flex-col md:flex-row gap-4 md:items-start items-center justify-between  border-t border-primary mt-5">
       <section className="text-secondary relative mt-5 w-3/4 md:w-1/3">
         <h1 className="text-3xl font-semibold absolute -top-[2rem] p-3 pr-16 bg-[#f0f0f2]  z-10">
           Socials

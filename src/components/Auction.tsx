@@ -82,6 +82,27 @@ export default function Auction() {
               placeholder="width x height (1440 x 800)"
             />
           </div>
+          <div className="flex flex-col md:flex-row gap-3 md:items-center ">
+            <label
+              htmlFor="image"
+              className="text-primary font-semibold uppercase md:w-1/4 whitespace-nowrap "
+            >
+              Image
+            </label>
+            <input
+              type="file"
+              name="image"
+              accept="image/*"
+              className="w-full outline-none p-2 bg-white"
+              placeholder="width x height (1440 x 800)"
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-primary text-white p-2 w-max mx-auto px-8 my-2"
+          >
+            Submit
+          </button>
         </form>
       </section>
     </main>

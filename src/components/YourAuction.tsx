@@ -2,6 +2,7 @@
 import Image from "next/image";
 import demo from "../../public/popular.jpg";
 import { popularData } from "@/constants/data";
+import Link from "next/link";
 
 export default function YourAuction() {
   return (
@@ -27,9 +28,12 @@ export default function YourAuction() {
           </section>
         );
       })}
-      <section className="text-center text-xs uppercase cursor-pointer text-primary py-4">
+      <Link
+        href="/auction"
+        className="text-center text-xs uppercase cursor-pointer text-primary py-4"
+      >
         Create an auction
-      </section>
+      </Link>
     </main>
   );
 }
