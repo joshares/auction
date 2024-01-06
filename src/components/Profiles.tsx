@@ -15,7 +15,7 @@ export default function Profiles() {
         </div>
         <div className="flex ">
           <p className="w-36">EMail:</p>{" "}
-          <p className="text-secondary">Joshua@gmail.com</p>
+          <p className="text-secondary">Joshares@gmail.com</p>
         </div>
         <div className="flex ">
           <p className="w-36">bids:</p> <p className="text-secondary">45</p>
